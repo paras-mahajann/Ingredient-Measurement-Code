@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Material & Container Detection</h2>
+    
+    <!-- Image Upload -->
+    <input type="file" id="upload" accept="image/*">
+    <button onclick="uploadImage()">Upload & Predict</button>
+
+    <!-- Webcam -->
+    <button onclick="startWebcam()">Start Webcam</button>
+    <video id="webcam" autoplay></video>
+    <canvas id="captureCanvas"></canvas>
+    <button onclick="captureImage()">Capture & Predict</button>
+
+    <!-- Prediction Results -->
+    <div id="result" class="hidden">
+        <h3>Prediction Results</h3>
+        <p><strong>Material:</strong> <span id="material"></span></p>
+        <p><strong>Container:</strong> <span id="container"></span></p>
+        <p><strong>Estimated Weight:</strong> <span id="weight"></span></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
