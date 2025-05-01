@@ -1,5 +1,6 @@
 # Ingredient-Measurement-Detection-
 It will detect ingredients in grams and from their texture and mass - density relation
+<<<<<<< HEAD
 # 🧪 Ingredient Measurement Detection
 
 A CLI-based deep learning project that detects materials like salt, sugar, and turmeric using images or real-time webcam input. You can optionally run the app with a Flask-based UI.
@@ -69,3 +70,5 @@ GitHub: https://github.com/paras-mahajann
 
 📬 Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+=======
+>>>>>>> e49e000a5291406c0b965ac31c4de4b556351c34
