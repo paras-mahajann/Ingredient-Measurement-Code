@@ -1,0 +1,12 @@
+*.pt
+*.h5
+*.onnx
+*.mp4
+*.avi
+*.zip
+*.rar
+*.png
+*.jpg
+dataset/
+models/
+checkpoints/
