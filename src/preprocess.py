@@ -91,7 +91,13 @@ X_container, Y_container = np.array(X_container), np.array(Y_container)
 
 
 # Save processed data
-np.save("dataset/X_material.npy", X_material)
+if len(X_material) == 0:
+    print("❌ No material images found. Dataset is empty.")
+else:
+    np.save("dataset/X_material.npy", X_material)
+    print("✅ Material data saved successfully")
+print("Current Working Directory:", os.getcwd())
+
 np.save("dataset/Y_material.npy", Y_material)
 np.save("dataset/material_classes.npy", np.array(materials))
 

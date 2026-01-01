@@ -19,7 +19,7 @@ def preprocess_image(image_path):
     img = cv2.imread(image_path)
     img = cv2.resize(img, (100, 100))
     img = img / 255.0  # Normalize
-    return np.expand_dims(img, axis=0)  # Reshape for model
+    return np.expand_dims(img, axis=0)  # Res hape for model
 
 @app.route("/")
 def home():
